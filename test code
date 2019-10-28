@@ -1,0 +1,295 @@
+$(document).ready(function() {
+
+var deck = [
+
+{card: 1,
+value: "A"},
+
+{card: 2,
+value: "A"},
+
+{card: 3,
+value: "B"},
+
+{card: 4,
+value: "B"},
+
+{card: 5,
+value: "C"},
+
+{card: 6,
+value: "C"},
+
+{card: 7,
+value: "D"},
+
+{card: 8,
+value: "D"},
+
+{card: 9,
+value: "E"},
+
+{card: 10,
+value: "E"},
+
+{card: 11,
+value: "F"},
+
+{card: 12,
+value: "F"},
+
+{card: 13,
+value: "G"},
+
+{card: 14,
+value: "G"},
+
+{card: 15,
+value: "H"},
+
+{card: 16,
+value: "H"},
+]
+
+document.getElementById("deck").innerHTML = deck
+})
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="gamecontainer">
+    <section class="memory-game">
+        <div class="card">
+            <img id="front" src="assets/match1.jpg">
+            <img id="back" src="assets/back.jpg">
+        </div>
+        <div class="card">
+            <img id="front" src="assets/match2.jpg">
+            <img id="back" src="assets/back.jpg">
+        </div>
+        <div class="card">
+            <img id="front" src="assets/match3.jpg">
+            <img id="back" src="assets/back.jpg">
+        </div>
+        <div class="card">
+            <img id="front" src="assets/match4.jpg">
+            <img id="back" src="assets/back.jpg">
+        </div>
+        <div class="card">
+            <img id="front" src="assets/match5.jpg">
+            <img id="back" src="assets/back.jpg">
+        </div>
+        <div class="card">
+            <img id="front" src="assets/match6.jpg">
+            <img id="back" src="assets/back.jpg">
+        </div>
+        <div class="card">
+            <img id="front" src="assets/match7.jpg">
+            <img id="back" src="assets/back.jpg">
+        </div>
+        <div class="card">
+            <img id="front" src="assets/match8.jpg">
+            <img id="back" src="assets/back.jpg">
+        </div>
+        <div class="card">
+            <img id="front" src="assets/match9.jpg">
+            <img id="back" src="assets/back.jpg">
+        </div>
+        <div class="card">
+            <img id="front" src="assets/match10.jpg">
+            <img id="back" src="assets/back.jpg">
+        </div>
+        <div class="card">
+            <img id="front" src="assets/match1.jpg">
+            <img id="back" src="assets/back.jpg">
+        </div>
+        <div class="card">
+            <img id="front" src="assets/match2.jpg">
+            <img id="back" src="assets/back.jpg">
+        </div>
+        <div class="card">
+            <img id="front" src="assets/match3.jpg">
+            <img id="back" src="assets/back.jpg">
+        </div>
+        <div class="card">
+            <img id="front" src="assets/match4.jpg">
+            <img id="back" src="assets/back.jpg">
+        </div>
+        <div class="card">
+            <img id="front" src="assets/match5.jpg">
+            <img id="back" src="assets/back.jpg">
+        </div>
+        <div class="card">
+            <img id="front" src="assets/match6.jpg">
+            <img id="back" src="assets/back.jpg">
+        </div>
+        <div class="card">
+            <img id="front" src="assets/match7.jpg">
+            <img id="back" src="assets/back.jpg">
+        </div>
+        <div class="card">
+            <img id="front" src="assets/match8.jpg">
+            <img id="back" src="assets/back.jpg">
+        </div>
+        <div class="card">
+            <img id="front" src="assets/match9.jpg">
+            <img id="back" src="assets/back.jpg">
+        </div>
+        <div class="card">
+            <img id="front" src="assets/match10.jpg">
+            <img id="back" src="assets/back.jpg">
+        </div>
+    </section>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>
+
+* {
+    box-sizing: border-box;
+    margin: 0 ;
+    padding: 0;
+    }
+
+#gamecontainer {
+    width: 1200px;
+    height: 1200px;
+    background: red;
+    display: flex;}
+
+img {width: 200px;
+height: 200px;}
+
+.memory-game {border: 2px solid blue;
+display: flex;
+flex-wrap: wrap;
+margin: auto;
+} 
+
+.card {margin: 5px;
+position: relative;
+background: green;}
+
+.card:active {transform: scale(50   %);}
+
+#front, #back {border: 2px solid purple;
+position: absolute;
+border-radius: 5px;
+background: orange;}  
+
+#front, #back {border: 2px solid purple;
+position: absolute;
+border-radius: 5px;
+background: orange;} 
+
+   var deck = [
+    
+    {card: 1,
+    value: "A",
+    front: src="assets/match1.jpg",
+    back: src="assets/back.jpg"},
+    
+    {card: 2,
+    value: "A",
+    front: src="assets/match2.jpg",
+    back: src="assets/back.jpg"},
+    
+    {card: 3,
+    value: "B",
+    front: src="assets/match3.jpg",
+    back: src="assets/back.jpg"},
+    
+    {card: 4,
+    value: "B",
+    front: src="assets/match4.jpg",
+    back: src="assets/back.jpg"},
+    
+    {card: 5,
+    value: "C",
+    front: src="assets/match5.jpg",
+    back: src="assets/back.jpg"},
+    
+    {card: 6,
+    value: "C",
+    front: src="assets/match6.jpg",
+    back: src="assets/back.jpg"},
+    
+    {card: 7,
+    value: "D",
+    front: src="assets/match7.jpg",
+    back: src="assets/back.jpg"},
+    
+    {card: 8,
+    value: "D",
+    front: src="assets/match8.jpg",
+    back: src="assets/back.jpg"},
+    
+    {card: 9,
+    value: "E",
+    front: src="assets/match9.jpg",
+    back: src="assets/back.jpg"},
+    
+    {card: 10,
+    value: "E",
+    front: src="assets/match10.jpg",
+    back: src="assets/back.jpg"},
+    
+    {card: 11,
+    value: "F",
+    front: src="assets/match11.jpg",
+    back: src="assets/back.jpg"},
+    
+    {card: 12,
+    value: "F",
+    front: src="assets/match12.jpg",
+    back: src="assets/back.jpg"},
+    
+    {card: 13,
+    value: "G",
+    front: src="assets/match13.jpg",
+    back: src="assets/back.jpg"},
+    
+    {card: 14,
+    value: "G",
+    front: src="assets/match14.jpg",
+    back: src="assets/back.jpg"},
+    
+    {card: 15,
+    value: "H",
+    front: src="assets/match15.jpg",
+    back: src="assets/back.jpg"},
+    
+    {card: 16,
+    value: "H",
+    front: src="assets/match16.jpg",
+    back: src="assets/back.jpg"},
+
+    {card: 17,
+    value: "H",
+    front: src="assets/match17.jpg",
+    back: src="assets/back.jpg"},
+
+    {card: 18,
+    value: "H",
+    front: src="assets/match18.jpg",
+    back: src="assets/back.jpg"},
+
+    {card: 19,
+    value: "H",
+    front: src="assets/match19.jpg",
+    back: src="assets/back.jpg"},
+
+    {card: 20,
+    value: "H",
+    front: src="assets/match20.jpg",
+    back: src="assets/back.jpg"},
+]
+    console.log(deck)
