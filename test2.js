@@ -1,16 +1,16 @@
 $(document).ready(() => {
     const cards = document.querySelectorAll(".card");
-    let hasFlippedCard = false;
-    let lockBoard = false;
+    let FlippedCard = false;
+    let Board = false;
     let firstCard, secondCard;
   
     function flipCard() {
-      if (lockBoard) return;
+      if (Board) return;
       if (this === firstCard) return;
       this.classList.add("flip");
   
-      if (!hasFlippedCard) {
-        hasFlippedCard = true;
+      if (FlippedCard) {
+        FlippedCard = true;
         firstCard = this;
   
         return;
@@ -30,12 +30,4 @@ $(document).ready(() => {
       firstCard.removeEventListener("click", flipCard);
       secondCard.removeEventListener("click", flipCard);
       console.log(cards);
-      win++;
-  
-      
-      }
-      $(".play-again").on("click", function() {
-        location.reload(true);
-      });
-    }
-)
+    }})

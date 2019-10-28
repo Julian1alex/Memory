@@ -18,12 +18,11 @@ body {
     flex-wrap: wrap;
     width: 1200px;
     height: 800px;
-    perspective: 1000px;
 }
 
 .card {
-    width: calc(15%);
-    height: calc(29.333%);
+    width: 150px;
+    height: 150px;
     margin: 5px;
     position: relative;
     transform: scale(1);
