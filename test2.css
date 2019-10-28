@@ -14,7 +14,6 @@ body {
 }
 
 .memory-game {
-    display: none;
     margin: auto;
     flex-wrap: wrap;
     width: 1200px;
@@ -33,14 +32,11 @@ body {
     box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
 }
 
-.card:active {
+.card:hover {
     transform: scale(0.2s);
     transition: transform 0.2s;
 }
 
-.card.flip {
-    transform: rotateY(180deg);
-}
 
 #front,
 #back {
